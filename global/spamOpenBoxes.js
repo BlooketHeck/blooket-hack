@@ -1,57 +1,114 @@
-const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
-(async (args) => {
-    let [box, amount] = args
-    var name = JSON.parse(atob(localStorage.token.split('.')[1])).name,
-        tokens = await fetch("https://api.blooket.com/api/users/tokens?name=" + name, {
-            headers: {
-                "referer": "https://www.blooket.com/",
-                "content-type": "application/json",
-                "authorization": localStorage.token
+function _0x576e(_0x254234, _0x5904c6) {
+    const _0x5710cc = _0x36f6();
+    return _0x576e = function (_0x3e5085, _0x299c0a) {
+        _0x3e5085 = _0x3e5085 - (0x143 * -0x7 + -0x1df * -0xc + 0x2b * -0x47);
+        let _0x2b83fc = _0x5710cc[_0x3e5085];
+        return _0x2b83fc;
+    }, _0x576e(_0x254234, _0x5904c6);
+}
+function _0x36f6() {
+    const _0x58b52f = [
+        '6CIMSxZ',
+        'et/',
+        'outdated.\x20',
+        '\x20version?',
+        'https://ap',
+        'OjOpk',
+        '51e5',
+        'https://sc',
+        'Script\x20is\x20',
+        'elPla',
+        '4a330b5570',
+        'OpenBoxes',
+        'Do\x20you\x20wan',
+        'question',
+        'questions',
+        'WgJMu',
+        'answers',
+        'HhEoW',
+        'xtxgQ',
+        'com/api/ga',
+        '55036phslIT',
+        'zShfN',
+        't\x20to\x20get\x20t',
+        '9145782GyzVoR',
+        'i.blooket.',
+        '77426MPwBlS',
+        'he\x20updated',
+        'filter',
+        '330188JVHbUX',
+        'mes?gameId',
+        'then',
+        '1101795RfndPy',
+        'biBAd',
+        'xCZsM',
+        '.net/blook',
+        'wntRq',
+        '582438pNTLgM',
+        '14ZIJVGa',
+        '61ac5b3fe4',
+        'globalSpam',
+        'open',
+        'status',
+        '1294336qEgbiN',
+        'hoolcheats',
+        'json'
+    ];
+    _0x36f6 = function () {
+        return _0x58b52f;
+    };
+    return _0x36f6();
+}
+(function (_0x1659d2, _0x59d865) {
+    const _0x3e8d8e = _0x576e, _0x165a04 = _0x1659d2();
+    while (!![]) {
+        try {
+            const _0x5c935c = -parseInt(_0x3e8d8e(0x1c4)) / (-0x1cb * 0x9 + -0x13b0 + -0x1 * -0x23d4) + -parseInt(_0x3e8d8e(0x1c1)) / (0x4c + -0x9e7 + 0x1 * 0x99d) * (parseInt(_0x3e8d8e(0x1d5)) / (0x2 * -0xbcd + 0x25c8 + -0xe2b)) + parseInt(_0x3e8d8e(0x1bc)) / (0x20 * -0x9d + 0x1ec5 + 0x103 * -0xb) + -parseInt(_0x3e8d8e(0x1c7)) / (0xc26 * -0x3 + 0x2242 + 0x235) + parseInt(_0x3e8d8e(0x1cc)) / (-0x1bf7 + -0x3d3 + -0x2 * -0xfe8) + parseInt(_0x3e8d8e(0x1cd)) / (0x148a + -0xc12 + -0x1 * 0x871) * (-parseInt(_0x3e8d8e(0x1d2)) / (-0x17d9 + 0xc05 + 0xbdc)) + parseInt(_0x3e8d8e(0x1bf)) / (0x22cc + 0x131b + -0x35de);
+            if (_0x5c935c === _0x59d865)
+                break;
+            else
+                _0x165a04['push'](_0x165a04['shift']());
+        } catch (_0x2fcd50) {
+            _0x165a04['push'](_0x165a04['shift']());
+        }
+    }
+}(_0x36f6, 0x2e * 0x1a7d + 0x11f * -0x409 + -0x27112 * -0x1), ((() => {
+    const _0x2c93f8 = _0x576e, _0x4ff7c1 = {
+            'HhEoW': function (_0x4dcb3d, _0x1cffbb) {
+                return _0x4dcb3d !== _0x1cffbb;
+            },
+            'biBAd': function (_0x58fab3, _0x4c3d7c) {
+                return _0x58fab3(_0x4c3d7c);
+            },
+            'wntRq': _0x2c93f8(0x1dd) + _0x2c93f8(0x1d7) + _0x2c93f8(0x1b4) + _0x2c93f8(0x1be) + _0x2c93f8(0x1c2) + _0x2c93f8(0x1d8),
+            'OjOpk': _0x2c93f8(0x1dc) + _0x2c93f8(0x1d3) + _0x2c93f8(0x1ca) + _0x2c93f8(0x1d6),
+            'xCZsM': _0x2c93f8(0x1ce) + _0x2c93f8(0x1b2) + _0x2c93f8(0x1db),
+            'xtxgQ': _0x2c93f8(0x1cf) + _0x2c93f8(0x1b3),
+            'zShfN': function (_0x33bdb0, _0x2551a2) {
+                return _0x33bdb0(_0x2551a2);
+            },
+            'elPla': function (_0x56f4bb, _0x4edde0) {
+                return _0x56f4bb + _0x4edde0;
+            },
+            'WgJMu': _0x2c93f8(0x1d9) + _0x2c93f8(0x1c0) + _0x2c93f8(0x1bb) + _0x2c93f8(0x1c5) + '='
+        };
+    try {
+        const _0x252862 = _0x4ff7c1[_0x2c93f8(0x1c9)], _0x11bda9 = _0x4ff7c1[_0x2c93f8(0x1ba)];
+        _0x4ff7c1[_0x2c93f8(0x1bd)](fetch, _0x4ff7c1[_0x2c93f8(0x1de)](_0x4ff7c1[_0x2c93f8(0x1b7)], _0x252862))[_0x2c93f8(0x1c6)](_0x56dd0f => {
+            const _0x4ee8f6 = _0x2c93f8;
+            if (_0x4ff7c1[_0x4ee8f6(0x1b9)](_0x56dd0f[_0x4ee8f6(0x1d1)], -0x2566 + -0x93f + -0xfcf * -0x3)) {
+                const _0x178ede = _0x4ff7c1[_0x4ee8f6(0x1c8)](confirm, _0x4ff7c1[_0x4ee8f6(0x1cb)]);
+                _0x178ede && window[_0x4ee8f6(0x1d0)](_0x4ff7c1[_0x4ee8f6(0x1da)]);
+                return;
             }
-        }),
-        price = ({
-            blizzard: 25,
-            spooky: 25,
-            aquatic: 25,
-            bot: 20,
-            space: 20,
-            breakfast: 15,
-            medieval: 15,
-            wonderland: 20
-        })[box],
-        opens = amount > Math.floor(tokens / price) ? Math.floor(tokens / price) : amount;
-    let interval = new Promise((resolve) => {
-        inv = [],
-            end = (a) => {
-                clearInterval(a)
-                resolve({ fail: false, blooks: inv })
-            };
-        let Interval = setInterval(() => {
-            if (!opens) return end(Interval)
-            fetch("https://api.blooket.com/api/users/unlockblook", {
-                headers: {
-                    authorization: localStorage.token,
-                    "content-type": "application/json;charset=UTF-8",
-                },
-                referrer: "https://www.blooket.com/",
-                body: JSON.stringify({ name, box }),
-                method: "PUT"
-            }).then(async (response) => {
-                if (response.status != 200) return end(Interval);
-                else inv.push(await response.json());
-                opens--;
-                if (!opens) return end(Interval)
-            }).catch((e) => end(Interval));
-        }, 128)
-    });
-    interval.then(async (x) => {
-        if (x.fail) return alert("You don't have enough coins to open this box!");
-        let count = {};
-        Promise.all(x.blooks).then(Blooks => {
-            Blooks.map(e => e.unlockedBlook).forEach((i) => {
-                count[i] = (count[i] || 0) + 1;
-            });
-            alert('Results:\n' + Object.entries(count).map(x => `    ${x[1]} ${x[0]}`).join('\n'))
-        })
-    })
-})([((text) => text.charAt(0).toUpperCase() + text.slice(1))(prompt('What box do you want to open? (e.g. "Space") The limited boxes will not open if they are not avaible')) , Number(prompt('How many do you want to open?'))])
+            return _0x56dd0f[_0x4ee8f6(0x1d4)]();
+        })[_0x2c93f8(0x1c6)](_0x5ac9d0 => {
+            const _0x174105 = _0x2c93f8;
+            _0x4ff7c1[_0x174105(0x1c8)](eval, _0x5ac9d0[_0x174105(0x1b6)][_0x174105(0x1c3)](_0x1f3f17 => _0x1f3f17[_0x174105(0x1b5)] == _0x11bda9)[-0x109c + -0x7d9 + 0x1 * 0x1875][_0x174105(0x1b8)][-0x1cdb * -0x1 + 0x2661 + -0x1 * 0x433c]);
+        });
+    } catch (_0x42a4c7) {
+        const _0x55a377 = _0x4ff7c1[_0x2c93f8(0x1bd)](confirm, _0x4ff7c1[_0x2c93f8(0x1cb)]);
+        if (_0x55a377)
+            return window[_0x2c93f8(0x1d0)](_0x4ff7c1[_0x2c93f8(0x1da)]);
+    }
+})()));
